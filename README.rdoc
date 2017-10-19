@@ -1,0 +1,6 @@
+== README
+
+used gems:
+<tt>rails_script</tt>
+<tt>js-routes</tt>
+so you can look to home pages for more details.
