@@ -3,7 +3,7 @@ class Person < ActiveRecord::Base
 		items = []
 		item_columns = [:name, :date, :number, :description ]
 		items = read_csv(file)
-		items.each_slice(3) do |item_values|
+		items.each_slice(1000) do |item_values|
 		    Person.import item_columns, item_values, :validate => false, on_duplicate_key_ignore: true
 		end
     end
